@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.trendingnewsnet.com	TRUE	/	FALSE	1999999999	sid	50301742-d6b7-11eb-9f7e-5ce9f909d362
-
