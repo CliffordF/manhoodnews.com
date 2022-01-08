@@ -128,23 +128,29 @@ a {
         color: #fff;
     }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
     .navbar-nav {
         display: block;
         width: auto;
-        float: none;
+        float: right;
     }
+}
 
+@media only screen and (max-width: 600px) {
         .navbar-nav > li {
-            display: block;
+           display: block;
+           width: auto;
+           float: right;
         }
-
+    }
+@media only screen and (max-width: 600px) {
     .navbar-default .navbar-toggle {
         border-color: #000;
         background: transparent;
         color: #000;
         float: right;
     }
+}
 
         .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
             background: transparent;
@@ -171,6 +177,8 @@ a {
         padding: 15px 8px;
     }
 }
+
+
 
 .content-box {
     background: #fff;
