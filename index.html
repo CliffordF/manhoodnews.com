@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="facebook-domain-verification" content="mo12iru1hyb1msdxkhpws6o82rwnmb" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+function myFunction() {
+  var x = document.getElementById(".navbar-nav");
+  if (x.className === ".navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-toggle collapsed";
+  }
+}
+</script>
+
+
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -47,7 +61,7 @@
 <body>
 <nav class="navbar navbar-default">
 <div class="container">
-<div class="navbar-header"><button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"></button><a class="navbar-brand" href="index.html"><img src="manhoodnewslogo.png" /></a></div>
+<div class="navbar-header"><button class="navbar-toggle collapsed" id="myToggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"></button><a class="navbar-brand" href="index.html"><img src="manhoodnewslogo.png" /></a></div>
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 <ul class="nav navbar-nav">
@@ -56,6 +70,7 @@
 	<li><a href="love.html">Love</a></li>
 	<li><a href="sex.html">Sex</a></li>
 	<li><a href="health.html">Health</a></li>
+    
 </ul>
 </div>
 </div>
