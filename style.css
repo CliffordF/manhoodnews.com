@@ -542,15 +542,22 @@ a {
 
 
 @media only screen and (max-width: 600px) {
-.form, font {
-  font-size: 20px; 
+.form > div{
+height: 100px;
+width: 100px;
+    
  }
 }
 
 @media only screen and (max-width: 600px) {
 .font, button {
-    
- }
+    height: auto;
+    width: auto;
+    border: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: 40%;
+    }
 }
 
 
@@ -558,6 +565,7 @@ a {
 .form, font, buton {
     text-align: justify;
     color: brown;
+    font-size: 11px;
  }
 }
 .timer {
