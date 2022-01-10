@@ -631,6 +631,13 @@ width: 100px;
         padding: 100%;
  }
 }
+
+@media screen and (min-width: 650px) {
+  div.menufooter {
+    display: none;
+  }
+}
+
 .col-md-4{
 	padding-top:30px;
 }
