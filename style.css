@@ -112,11 +112,12 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-default {
-    height: 130px;
-    width: 100%;
-      }
-    }
+     .navbar{
+      
+    
+ }
+}
+
 
 .navbar-default {
     background-image: none;
@@ -127,15 +128,38 @@ a {
     padding-bottom: 25px;
 }
 
+
+@media screen and (max-width: 600px) {
+  .navbar-default {
+      height: auto;
+      width: auto;
+      padding-left: 60px;
+      padding-right: 50px;
+      margin: 0;
+    
+ }
+}
+
+
+
 .navbar-brand {
     padding: 2px 20px;
     padding-bottom: 10px;
-}
+ }
 
+@media screen and (max-width: 600px) {
+.navbar-brand {
+ }
+}
     .navbar-brand img {
         width: 300px;
         height: 100px;
     }
+
+@media screen and (max-width: 600px) {
+.navbar-brand img {
+ }
+}
 
 
   .navbar-nav.responsive a {
@@ -144,19 +168,71 @@ a {
     text-align: left;
   }
 
+
+@media only screen and (max-width: 600px) {
+   .navbar-nav.responsive a  {
+    float: left;
+    text-align: left;
+  }
+ }
+
+
+
 .navbar-nav{
     float: right;
     padding-top: 15px;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar-nav{
-    width: auto;
+   .navbar-nav{
+     height: auto;
+     width: auto;
+     margin: 0;
+    
+    }
+}
+
+.navbar-nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav a{
+  
+   
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav{
+    margin-right: auto;
+    padding-top: 15px;
+   
     }
 }
     .navbar-nav > li {
         text-align: center;
+        margin-right: auto
     }
+
+
+@media only screen and (max-width: 600px) {
+   .navbar-nav  > li{
+   float: right;
+   margin-right: 100px;
+ }
+}
 
 .navbar-default .navbar-nav > li > a {
     font-family: Arial;
@@ -165,33 +241,25 @@ a {
     font-size: 18px;
 	font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+.navbar-default .navbar-nav > li > a {
+    font-family: Arial;
+    text-shadow: none;
+    color: red;
+    font-size: 18px;
+	font-weight: bold;
+ }
+}
 
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
         text-shadow: 0px 2px 2px #777;
         color: #fff;
     }
 
-
-
-
-@media only screen and (max-width: 600px) {
-    .navbar-default .navbar-toggle {
-        border-color: #000;
-        background: transparent;
-        color: #000;
-        float: right;
-    }
-}
-
-        .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-            background: transparent;
-            color: #fff;
-            border-color: #fff;
-        }
-
-navbar-toggle collapsed a:hover
-
+     
     .navbar-header {
+        height: auto;
+        width: auto;
         text-align: center;
     }
 
