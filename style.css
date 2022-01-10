@@ -565,7 +565,9 @@ width: 100px;
 .font, button {
     height: auto;
     width: auto;
-    margin-left: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     }
 }
 
