@@ -409,7 +409,7 @@ a {
     height: 100px;
     background: #000;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .footer a {
@@ -421,7 +421,7 @@ a {
     width: 100%;
     background: #333333;
     bottom: 0;
-    padding: 8px 0;
+    padding: 9px 0;
 }
 
     .timer p {
