@@ -26,6 +26,12 @@ body {
  }
 }
 
+@media screen and (max-width: 600px) {
+body, h2 {
+      font-size: 22px;
+    }
+}
+    
 /* End body Media Queries */
     
 body {
@@ -148,8 +154,9 @@ a {
     padding-bottom: 10px;
  }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 .navbar-brand {
+
  }
 }
     .navbar-brand img {
@@ -157,11 +164,18 @@ a {
         height: 100px;
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 .navbar-brand img {
+    margin-left: 50%;
  }
 }
 
+
+@media screen and (max-width: 600px) {
+.navbar-brand img {
+    margin-left: 20%;
+ }
+}
 
   .navbar-nav.responsive a {
     float: none;
