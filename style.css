@@ -164,16 +164,16 @@ a {
         height: 100px;
     }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 600px) {
 .navbar-brand img {
-    margin-left: 50%;
+    margin-left: 40%;
  }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) {
 .navbar-brand img {
-    margin-left: 5%;
+
  }
 }
 
