@@ -111,16 +111,17 @@ a {
 
 .navbar {
     height: auto;
-    width: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-	
+    width: 100%;
+    padding: inherit;
 }
 
-@media screen and (max-width: 600px) {
-     .navbar{
-      
-    
+@media screen and (min-width: 700px) {
+    .navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 0;
+    z-index: 1; 
  }
 }
 
