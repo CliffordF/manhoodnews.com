@@ -8,82 +8,11 @@
     <meta name="description" content="demo cookieconsent gdpr orest bida">
     <link rel="icon" type="image/png" href="https://orestbida.com/favicon.png">
     <link rel="apple-touch-icon" href="https://orestbida.com/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./cookieconsent/demo/assets/css/style.css">
-    <script>
-        function doDemoThings(cookie) {
-            disableBtn('btn2');
-            disableBtn('btn3');
-
-            // Delete line below
-            cookie && (document.getElementById('cookie_val').innerHTML = JSON.stringify(cookie, null, 2));
-        }
-
-        function disableBtn(id) {
-            document.getElementById(id).disabled = true;
-            document.getElementById(id).className = 'styled_btn disabled';
-        }
-
-        window.addEventListener && window.addEventListener('load', function () {
-
-            doDemoThings();
-
-            var darkmode = false;
-
-            function toggleDarkmode() {
-                if (!darkmode) {
-                    document.getElementById('theme').innerText = 'dark theme';
-                    document.body.className = 'd_mode c_darkmode';
-                    darkmode = true;
-                } else {
-                    document.getElementById('theme').innerText = 'light theme';
-                    document.body.className = 'd_mode';
-                    darkmode = false;
-                }
-            }
-
-            /*
-            * The following lines of code are for demo purposes (show api functions)
-            */
-            if (document.addEventListener) {
-
-                document.getElementById('btn2').addEventListener('click', function () {
-                    cc.show(0);
-                });
-
-                document.getElementById('btn3').addEventListener('click', function () {
-                    cc.hide();
-                });
-
-                document.getElementById('btn5').addEventListener('click', function () {
-                    cc.showSettings(0);
-                });
-
-                document.getElementById('btn6').addEventListener('click', function () {
-                    toggleDarkmode();
-                });
-            } else {
-                document.getElementById('btn2').attachEvent('onclick', function () {
-                    cc.show(0);
-                });
-
-                document.getElementById('btn3').attachEvent('onclick', function () {
-                    cc.hide();
-                });
-
-                document.getElementById('btn5').attachEvent('onclick', function () {
-                    cc.showSettings(0);
-                });
-
-                document.getElementById('btn6').attachEvent('onclick', function () {
-                    toggleDarkmode();
-                });
-            }
-        });
-    </script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body class="d_mode">
     <div id="_mainwrapper">
-        <div id="app_content">
+        <div id="app_content" role="main">
             <div class="_max_width">
                 <div id="header">
                     <a id="github_link" href="https://github.com/orestbida/cookieconsent/" aria-label="cookie consent">
@@ -102,7 +31,7 @@
                 <div id="app_settings">
                     <h3>Current settings</h3>
                     <p class="_theme">Current theme: <span id="theme">light theme</span></p>
-                    <p class="_cookie_value">Current cookie_value: </p>
+                    <p class="_cookie_value">Current cookie_value: </p>   
                     <code id="cookie">
                         <pre id="cookie_val"></pre>
                     </code>
@@ -124,7 +53,10 @@
         </div>
     </div>
     <script defer src="../src/cookieconsent.js"></script>
-    <script defer src="app.js"></script>
+    <script defer src="app2.js"></script>
+    
+    <!-- =================================================== -->
+    <!-- All the scripts below are managed by the cookieconsent -->
 
     <!-- INLINE GTAG -->
     <script type="text/plain" data-cookiecategory="analytics">
@@ -135,6 +67,25 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TKL88W3');
         console.log("loaded gtm.js");
+    </script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKL88W3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- INLINE CLARITY -->
+    <script type="text/plain" data-cookiecategory="targeting">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "632ibvubgh");
+        console.log("loaded clarity.js");
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=287319019608397&ev=PageView&noscript=1"/></noscript>
+    
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script type="text/plain" data-src="./assets/cookie_test.js" data-cookiecategory="analytics" defer></script>
+    <script type="text/plain" data-cookiecategory="analytics">
+        console.log('calling object defined inside cookie_test.js: ');
+        myObject.write("Hello!");
     </script>
 </body>
 </html>
